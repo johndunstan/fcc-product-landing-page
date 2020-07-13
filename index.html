@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dinos 4 Sale</title>
+    <link rel="icon" href="src/Assets/dino-logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css"
+  </head>
+
+  <body id="main">
+    <div id="app"></div>
+    <!-- <div id="header"><image src="https://publicdomainvectors.org/photos/dinosaur-silhouette-freesvg.org.jpg" id="header-image"><p>Dinos For Sale<p>
+		  <nav id="nav-bar">
+				<ul>
+					<li>Species</li>
+					<li>Pricing</li>
+					<li>Transportation</li>
+					<li>Cautions</li>
+				</ul>
+			</nav>
+		</div>
+    <h1>Landing Page!</h1> -->
+
+    <header id="header">
+      <nav id="nav-bar">
+        <div class="topnav">
+          <a href="#home" class="active"
+            ><img src="src/Assets/dino-logo.png" id="header-img" />Home</a
+          >
+          <a href="#contact" class="nav-link">Request Info</a>
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#info" class="nav-link">More Info</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="page-content">
+      <div id="home">
+        <div id="landing-image"></div>
+        <h1>Dinos 4 Sale</h1>
+      </div>
+
+      <section id="contact">
+        <h2>Request Information</h2>
+        <form
+          id="form"
+          action="https://www.freecodecamp.org/email-submit"
+          method="POST"
+          target="_blank"
+        >
+          <p>
+            Submit your email address for more information.
+          </p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@example.com"
+          />
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </section>
+      <section id="products">
+        <h2>Products</h2>
+        <div class="flex-container">
+          <div class="image-div">
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0cPgl3_mb421dLfdkojpO3UEVkg=/2000x2000/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/thumbnail/standard/0933fc48-db92-420c-8405-c7133a85d110.png"
+              alt="t-rex"
+              class="product-image"
+            />
+          </div>
+          <div class="image-div">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/91zK2QMXnkL._AC_SL1500_.jpg"
+              alt="many dinosaur breeds"
+              class="product-image"
+            />
+          </div>
+          <div class="image-div">
+            <img
+              src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/V3TLXCLBKY3ZXCWFK3P76C3KCM.jpg"
+              alt="brachiosaurus"
+              class="product-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="info">
+        <h2>More Info</h2>
+
+        <div class="video-container">
+          <center>
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/PJlmYh27MHg?start=23"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </center>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          We exist to serve animals and you. Although our animals no longer
+          actually exist, we treat them with the utmost respect and care. You
+          can expect nothing but the best from your experience with us.
+        </p>
+      </section>
+    </div>
+
+    <script>
+      function clickFunction() {
+        console.log('I have been clicked!')
+      }
+
+      function myFunction() {
+        var x = document.getElementById('header')
+        if (x.className === 'topnav') {
+          x.className += ' responsive'
+        } else {
+          x.className = 'topnav'
+        }
+      }
+    </script>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
